@@ -7,6 +7,8 @@ gem 'rails', '3.2.3'
 group :development do
 	gem 'sqlite3'
 end
+
+gem 'pg'
 gem 'haml'
 gem 'state_machine'
 gem 'ruby-graphviz'
