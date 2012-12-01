@@ -6,9 +6,9 @@ class Consumers::JobAnswersController < ApplicationController
 	end
 
 	def create
-		@job_answer = current_consumer.job_answers.new
-		#if @job_answer.save
-		#	redirect_to [:consumers, ]
+		# To DO
+		#@job_answer = current_consumer.job_answers.new
+
 	end
 
 

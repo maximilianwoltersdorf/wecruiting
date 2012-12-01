@@ -27,7 +27,7 @@ class Customers::JobPostingsController < ApplicationController
 	end
 
 	def edit
-
+		
 	end
 
 	def update

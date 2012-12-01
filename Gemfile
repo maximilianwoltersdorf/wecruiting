@@ -15,6 +15,8 @@ gem 'ruby-graphviz'
 gem 'unicorn'
 gem 'devise'
 gem 'less-rails-bootstrap'
+gem "compass_twitter_bootstrap"
+gem "compass-rails"
 gem 'therubyracer'
 gem 'formtastic'
 gem 'jquery-ui-rails'
@@ -25,6 +27,7 @@ gem 'jquery-ui-rails'
 group :assets do
   gem 'sass-rails',   '~> 3.2.3'
   gem 'coffee-rails', '~> 3.2.1'
+  #gem 'compass'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
   # gem 'therubyracer', :platform => :ruby

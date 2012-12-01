@@ -7,21 +7,17 @@
 		= csrf_meta_tags
 	%body
 		.container
-			#top-header-line
 			%header
-				.title
-					= link_to root_path do
-						.slogan
-							%h2 WeCruiting
-							%i You are hiring? we' cruiting!
-				%ul.nav.nav-pills
-					%li= link_to "The project", :anchor => "the_project"
-					%li= link_to "Who we are", :anchor => "who_we_are"
-					%li= link_to "How it Works", :anchor => "how_it_works"
-					%li= link_to "Contact", :anchor => "contact"
+				= link_to root_path do
+					#logo
+				%ul.nav.nav-pills.fontface
+					%li= link_to "DAS PROJEKT", {:anchor => "the_project"}, :class => 'active'
+					%li= link_to "DAS TEAM", :anchor => "who_we_are"
+					%li= link_to "DAS ZIEL", :anchor => "how_it_works"
+					%li= link_to "KONTAKT", :anchor => "contact"
 					%li.dropdown
 						= link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
-							Login
+							LOGIN
 							%b.caret
 						%ul.dropdown-menu
 							= link_to "Kunde", new_customer_session_path, :class => "popup", :remote => true
@@ -29,6 +25,7 @@
 							= link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
 		.content
 			.container
+				%h1.fontface= "TEST"
 				= yield
 
 	%footer
