@@ -1,0 +1,2 @@
+module Consumers::JobAnswersHelper
+end

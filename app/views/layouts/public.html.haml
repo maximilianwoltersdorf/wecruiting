@@ -1,0 +1,41 @@
+!!!
+%html
+	%head
+		%title WeCruiting
+		= stylesheet_link_tag "application", :media => "all"
+		= javascript_include_tag "application"
+		= csrf_meta_tags
+	%body
+		.container
+			#top-header-line
+			%header
+				.title
+					= link_to root_path do
+						.slogan
+							%h2 WeCruiting
+							%i You are hiring? we' cruiting!
+				%ul.nav.nav-pills
+					%li= link_to "The project", :anchor => "the_project"
+					%li= link_to "Who we are", :anchor => "who_we_are"
+					%li= link_to "How it Works", :anchor => "how_it_works"
+					%li= link_to "Contact", :anchor => "contact"
+					%li.dropdown
+						= link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
+							Login
+							%b.caret
+						%ul.dropdown-menu
+							= link_to "Kunde", new_customer_session_path, :class => "popup", :remote => true
+							%br
+							= link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
+		.content
+			.container
+				= yield
+
+	%footer
+		%p Copyright 2012 by Maximilian Woltersdorf
+		.tabbable.tabs-below
+
+			.ul.nav.nav-tabs
+				= link_to "Impressum", '#'
+				|
+				= link_to "About", '#'

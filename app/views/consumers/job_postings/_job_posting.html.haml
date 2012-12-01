@@ -1,0 +1,9 @@
+= content_tag_for :article, job_posting do |job|
+	.job_title
+		= "##{job.id}"
+		%b= link_to job.title, consumers_job_posting_path(job_posting)
+	.information
+		%i online seit: 
+		%i= job.created_at.to_date
+	.actions
+		= link_to "Ansehen", consumers_job_posting_path(job_posting)

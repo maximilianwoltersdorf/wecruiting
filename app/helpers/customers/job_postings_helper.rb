@@ -1,0 +1,2 @@
+module Customers::JobPostingsHelper
+end

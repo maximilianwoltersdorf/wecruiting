@@ -1,0 +1,8 @@
+- case view
+- when 'layout'
+	= content_tag_for :li, department do |d|
+		= link_to d.title, customers_department_path(department)
+- when 'home'
+	= content_tag_for :article, department do |d|
+		%h3= d.title
+		= render d.job_postings, :department => department

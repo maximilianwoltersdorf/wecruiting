@@ -1,0 +1,9 @@
+%h3 Neue Stellenausschreibung
+
+= semantic_form_for [:customers, @department, @job_posting], :method => :past do |f|
+	= f.inputs do
+		= f.input :title
+		= f.input :description
+		= f.input :requirements
+	= f.actions do
+		= f.submit

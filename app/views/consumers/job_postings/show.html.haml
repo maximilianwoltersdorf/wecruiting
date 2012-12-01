@@ -1,0 +1,21 @@
+= content_tag_for :article, @job_posting do |job|
+	%fieldset 
+		%legend Unternehmensinformationen
+		.job_attribute
+			%span Titel
+			%span= @department.title
+		.job_attribute
+			%span Beschreibung
+			%span= @department.description
+	%fieldset 
+		%legend Stelleninformationen
+		.job_attribute
+			%span Titel
+			%span= @job_posting.title
+		.job_attribute
+			%span Beschreibung
+			%span= @job_posting.description
+		.job_attribute
+			%span Anforderungen
+			%span= @job_posting.requirements
+	= link_to "Antworten", '#' , :class => "btn btn-primary"

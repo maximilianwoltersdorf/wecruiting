@@ -1,0 +1,14 @@
+- department = @department || department
+= content_tag_for :article, job_posting do |job|
+	.job_title
+		= "##{job.id}"
+		%b= link_to job.title, '#'
+	.information
+		%i online seit: 
+		%i= job.created_at.to_date
+	.actions
+		= link_to "Editieren", edit_customers_department_job_posting_path(department, job_posting) 
+		|
+		= link_to "Löschen", customers_department_job_posting_path(department, job_posting), :method => :delete, :confirm => "Möchten Sie dieses Posting '#{job_posting.title}' wirklich löschen?"
+		
+		

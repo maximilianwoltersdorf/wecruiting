@@ -1,0 +1,9 @@
+= semantic_form_for @department, :url => customers_departments_path, :method => :post do |f|
+	= f.inputs do
+		= f.input :title
+		= f.input :description
+		= f.input :contact_person
+		= f.input :contact_email
+	= f.actions do
+		= f.submit
+
