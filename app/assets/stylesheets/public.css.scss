@@ -4,6 +4,7 @@
 body {
 	width: 103%;
 	margin:auto;
+	margin-top: -3px;
 }
 
 @font-face {
@@ -22,6 +23,10 @@ p.style1 {font: 18px/27px 'BebasRegular', Arial, sans-serif;}
 
 header {
 	height: 85px;
+	.nav {
+		float:left;
+		margin-left: 50px;
+	}
 }
 
 .dropdown-menu {
@@ -29,15 +34,14 @@ header {
 }
 
 ul.nav.nav-pills {
-	margin-left: 60px;
+	margin-left: 13%;
 }
 .nav.nav-pills {
 	&.fontface {
 		font: 11px/68px 'BebasRegular', Arial, sans-serif;letter-spacing: 0;
-		left: 47%;
 		li {
 			a {
-				height: 30px;
+				height: 50px;
 				color: #82887a;
 			}
 			a.active {
