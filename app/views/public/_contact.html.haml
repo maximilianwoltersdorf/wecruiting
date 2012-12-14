@@ -3,8 +3,11 @@
 = flash[:success]
 = semantic_form_for RequestMessage.new do |f|
   = f.inputs do
-    = f.input :email
-    = f.input :name
-    = f.input :message
-  = f.actions do
-    = f.action :submit
+    .span12
+      .span5
+        = f.input :email, :input_html => { :class => 'input_field_contact' }
+        = f.input :name, :input_html => { :class => 'input_field_contact' }
+      .span6
+        = f.input :message
+        = f.actions do
+          = f.action :submit, :button_html => { :class => "submit_btn", :disable_with => 'Wait...' }, :label => "send"
