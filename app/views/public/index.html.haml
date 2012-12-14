@@ -1,5 +1,8 @@
 .row
   .span12.box_shadow
+    - if flash.any?
+      .success_msg
+        = flash[:success]
     #the_project
       %h3.arrow_bg The project
       .arrow_bg_left

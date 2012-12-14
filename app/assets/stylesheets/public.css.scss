@@ -50,10 +50,18 @@ header {
 	}
 }
 
-.dropdown-menu {
+ul.dropdown-menu {
   padding: 10px;
-  a.popup:hover {
-    background:none;
+  min-width: 10px;
+  a {
+    display:block;
+    text-align: center;
+    width:60px;
+    padding:3px 0;
+  }
+  a:hover {
+    display:block;
+    background:none !important;
   }
 }
 
@@ -269,7 +277,7 @@ input[type="color"]:focus,
     @include background-image(linear-gradient(#93c14e, #6e9633));
     border:solid 1px #6e9631;
     @include border-radius(2px);
-    padding:3px 5px;
+    padding:7px 20px;
     color: #FFFFFF;
   }
 }
@@ -278,5 +286,15 @@ hr {
 	border: 2px solid;
 }
 
+.success_msg {
+  background-color:#b1cd88;
+  border:solid 1px #7da73d;
+  @include border-radius(2px);
+  text-align: center;
+  width: 370px;
+  margin: 18px;
+  color: #5c7d2c;
+  padding:7px 20px;
+}
 
 
