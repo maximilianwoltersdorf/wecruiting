@@ -1,6 +1,10 @@
 class Consumers::JobAnswersController < ApplicationController
 	before_filter :find_base_data
 	
+	def index
+		
+	end
+
 	def new
 		@job_answer = current_consumer.job_answers.new
 	end
@@ -10,6 +14,7 @@ class Consumers::JobAnswersController < ApplicationController
 		#@job_answer = current_consumer.job_answers.new
 
 	end
+
 
 
  private
