@@ -51,7 +51,7 @@ module Wecruiting
     config.active_record.whitelist_attributes = true
 
     # FÜr Heroku disablen
-    #config.assets.initialize_on_precompile = false
+    config.assets.initialize_on_precompile = false
 
     # Enable the asset pipeline
     config.assets.enabled = true
