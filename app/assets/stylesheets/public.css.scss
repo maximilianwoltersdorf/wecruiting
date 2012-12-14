@@ -18,9 +18,6 @@ body {
   font-style: normal;
 }
 
-h1 .fontface {font: 60px/68px 'BebasRegular', Arial, sans-serif;letter-spacing: 0;}
-p.style1 {font: 18px/27px 'BebasRegular', Arial, sans-serif;}			
-
 header {
 	height: 85px;
 	.nav {
@@ -35,6 +32,7 @@ header {
 
 ul.nav.nav-pills {
 	margin-left: 13%;
+    float: right;
 }
 .nav.nav-pills {
 	&.fontface {
@@ -68,6 +66,28 @@ ul.nav.nav-pills {
 	background-color: white;
 }
 
+h3 {
+  font: 18px/51px 'BebasRegular', Arial, sans-serif;letter-spacing: 0;
+  color: #FFFFFF;
+  &.arrow_bg {
+    @include background(image-url("heading_main.png"));
+    width: 300px;
+    height: 51px;
+    background-position: right;
+    padding-left:20px;
+  }
+}
+
+.arrow_bg_left {
+  @include background(image-url("heading_left.png"));
+  width: 89px;
+  height: 70px;
+  position: absolute;
+  top: 0;
+  left: -89px;
+}
+
+
 footer {
 	background-color: #212121;
 	clear: both;
@@ -95,6 +115,7 @@ footer {
 #the_project,
 #contact,
 #who_we_are {
+  position: relative;
 	margin-top: 20px;
 	h3 {
 		font-size: 14px;
