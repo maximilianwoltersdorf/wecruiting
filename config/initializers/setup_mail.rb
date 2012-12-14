@@ -7,3 +7,5 @@ ActionMailer::Base.smtp_settings = {
   :authentication       => "plain",  
   :enable_starttls_auto => true  
 } 
+
+ActionMailer::Base.delivery_method = :smtp
