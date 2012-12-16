@@ -88,10 +88,10 @@ ActiveRecord::Schema.define(:version => 20121126074411) do
 
   create_table "job_postings", :force => true do |t|
     t.string   "title"
-    t.text     "description",   :limit => 255
+    t.text     "description"
     t.string   "requirements"
-    t.datetime "created_at",                   :null => false
-    t.datetime "updated_at",                   :null => false
+    t.datetime "created_at",    :null => false
+    t.datetime "updated_at",    :null => false
     t.integer  "customer_id"
     t.integer  "department_id"
     t.string   "location"
