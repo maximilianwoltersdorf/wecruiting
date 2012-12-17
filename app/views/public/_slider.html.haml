@@ -1,23 +1,54 @@
--##slider
--#  .ls-layer{:rel => "slidedelay: 3000;"}
--#    //background
--#    =image_tag('gallery/l1.png', :class => 'ls-bg', :alt => 'layer1') do
--#      =image_tag('gallery/l11.png', :class => 'ls-s2', :alt => 'sublayer', :style => "durationin: 2000; easingin: easeOutExpo; slidedirection: top; delayin: 1000" )
--#      =image_tag('gallery/l12.png', :class => 'ls-s3', :alt => 'sublayer', :rel => "durationin: 2300; easingin: easeOutElastic; slidedirection: bottom; delayin: 1000" )
-
 #layerslider
-  / LayerSlider layer
+  .ls-layer{:rel => "slidedelay: 3000"}
+    %img.ls-bg{:alt => "layer", :src => "#{image_path('gallery/l1.jpg')}"}
+      %img.ls-s2{:alt => "sublayer", :src => "#{image_path('gallery/l11.png')}", :style => "durationin: 2000; easingin: easeOutExpo; slidedirection: top; delayin: 1000"}
+        %img.ls-s3{:alt => "sublayer", :rel => "durationin: 2300; easingin: easeOutElastic; slidedirection: bottom; delayin: 1000", :src => "#{image_path('gallery/l12.png')}"}
+          %img#leaf1.ls-s4{:alt => "sublayer", :rel => "slidedirection: left", :src => "#{image_path('gallery/l13.png')}"}
+            %img.ls-s5{:alt => "sublayer", :rel => "slidedirection: top", :src => "#{image_path('gallery/l15.png')}"}
+              %img.ls-s6{:alt => "sublayer", :rel => "slidedirection: top", :src => "#{image_path('gallery/l14.png')}"}
+                %img#leaf2.ls-s7{:alt => "sublayer", :rel => "slidedirection: bottom", :src => "#{image_path('gallery/l16.png')}"}
+                  %img#leaf3.ls-s2{:alt => "sublayer", :rel => "slidedirection: top", :src => "#{image_path('gallery/l17.png')}"}
   .ls-layer
-    / LayerSlider background
-    %img.ls-bg{:alt => "layer1-background", :src => "#{image_path('gallery/l1.jpg')}" }
-      / LayerSlider sublayers
-      %img.ls-s1{:alt => "layer1-sublayer1", :src => "#{image_path('gallery/l11.png')}"}
-        %img.ls-s2{:alt => "layer1-sublayer2", :src => "#{image_path('gallery/l12.png')}"}
-          %img.ls-s3{:alt => "layer1-sublayer3", :src => "#{image_path('gallery/l13.png')}"}
+    %img.ls-bg{:alt => "layer", :src => "#{image_path('gallery/l3.jpg')}"}
+      %img.ls-s2{:alt => "sublayer", :rel => "durationin: 5800; easingin: easeOutQuad", :src => "#{image_path('gallery/l31.png')}"}
+        %img.ls-s3{:alt => "sublayer", :rel => "durationin: 5600; easingin: easeOutQuad", :src => "#{image_path('gallery/l32.png')}"}
+          %img.ls-s5{:alt => "sublayer", :rel => "durationin: 1200", :src => "#{image_path('gallery/l33.png')}"}
+            %img.ls-s5{:alt => "sublayer", :rel => "durationin: 1350", :src => "#{image_path('gallery/l34.png')}"}
+              %img.ls-s6{:alt => "sublayer", :rel => "durationin: 4000; easingin: easeOutExpo; durationout: 800; delayout: 50", :src => "#{image_path('gallery/l36.png')}"}
+                %img.ls-s7{:alt => "sublayer", :rel => "durationin: 5000; easingin: easeOutExpo; durationout: 800; delayout: 100", :src => "#{image_path('gallery/l35.png')}"}
+                  %img.ls-s8{:alt => "sublayer", :src => "#{image_path('gallery/l37.png')}"}
+                    %img.ls-s9{:alt => "sublayer", :src => "#{image_path('gallery/l38.png')}"}
+                      %img.ls-s10{:alt => "sublayer", :src => "#{image_path('gallery/l39.png')}"}
+                        %img.ls-s11{:alt => "sublayer", :src => "#{image_path('gallery/l310.png')}"}
+                          %img.ls-s12{:alt => "sublayer", :src => "#{image_path('gallery/l311.png')}"}
+  .ls-layer{:rel => "slidedirection: top; slidedelay: 6000"}
+    %img.ls-bg{:alt => "layer", :src => "#{image_path('gallery/l2.jpg')}"}
+      %img#clouds.ls-s2{:alt => "sublayer", :src => "#{image_path('gallery/l21.png')}"}
+        %img.ls-s3{:alt => "sublayer", :src => "#{image_path('gallery/l22.png')}"}
+          %img.ls-s4{:alt => "sublayer", :src => "#{image_path('gallery/l23.png')}"}
+            %img.ls-s5{:alt => "sublayer", :src => "#{image_path('gallery/l24.png')}"}
+              %img.ls-s6{:alt => "sublayer", :src => "#{image_path('gallery/l25.png')}"}
+                %img.ls-s7{:alt => "sublayer", :src => "#{image_path('gallery/l26.png')}"}
+                  %img.ls-s8{:alt => "sublayer", :src => "#{image_path('gallery/l27.png')}"}
+                    %img.ls-s9{:alt => "sublayer", :src => "#{image_path('gallery/l28.png')}"}
+                      %img.ls-s10{:alt => "sublayer", :rel => "slidedirection: bottom; durationin: 1000; easingin: easeOutExpo; delayin: 1500; delayout: 50", :src => "#{image_path('gallery/l29.png')}"}
   .ls-layer
-    / LayerSlider background
-    %img.ls-bg{:alt => "layer1-background", :src => "#{image_path('gallery/l2.jpg')}" }
-      / LayerSlider sublayers
-      %img.ls-s1{:alt => "layer1-sublayer1", :src => "#{image_path('gallery/l21.png')}"}
-        %img.ls-s2{:alt => "layer1-sublayer2", :src => "#{image_path('gallery/l22.png')}"}
-          %img.ls-s3{:alt => "layer1-sublayer3", :src => "#{image_path('gallery/l23.png')}"}
+    %img.ls-bg{:alt => "layer", :src => "#{image_path('gallery/l4.jpg')}"}
+      %img.ls-s6{:alt => "sublayer", :src => "#{image_path('gallery/l45.png')}", :style => "durationin: 6000; easingin: easeOutQuart"}
+        %img.ls-s5{:alt => "sublayer", :src => "#{image_path('gallery/l44.png')}", :style => "durationin: 3000; easingin: easeOutExpo"}
+          %img.ls-s2{:alt => "sublayer", :src => "#{image_path('gallery/l41.png')}", :style => "delayin: 1400; easingin: easeOutBack"}
+            %img.ls-s3{:alt => "sublayer", :src => "#{image_path('gallery/l42.png')}", :style => "delayin: 1400; easingin: easeOutBack"}
+              %img.ls-s4{:alt => "sublayer", :src => "#{image_path('gallery/l43.png')}", :style => "delayin: 1400; easingin: easeOutBack"}
+  .ls-layer
+    %img.ls-bg{:alt => "layer", :src => "#{image_path('gallery/l5.jpg')}"}
+      %img#earth.ls-s3{:alt => "sublayer", :src => "#{image_path('gallery/l51.jpg')}"}
+        %img.ls-s4{:alt => "sublayer", :src => "#{image_path('gallery/l52.png')}"}
+          %img.ls-s6{:alt => "sublayer", :src => "#{image_path('gallery/l53.png')}"}
+            %img.ls-s8{:alt => "sublayer", :src => "#{image_path('gallery/l54.png')}"}
+              %p#l5text1.ls-s12
+                2003 UB
+                %span.small 313
+              %p#l5text2.ls-s14
+                Charon
+              %p#l5text3.ls-s16
+                Ceres
