@@ -1,0 +1,35 @@
+$(document).ready(function(){
+    $('#layerslider').layerSlider({
+        autoStart           : true,
+        firstLayer          : 2,
+        twoWaySlideshow     : false,
+        keybNav             : true,
+        imgPreload          : true,
+        navPrevNext         : true,
+        navStartStop        : true,
+        navButtons          : true,
+        skin                : 'lightskin',
+        skinsPath           : "<%= asset_path 'slider/skins/'%>",
+        pauseOnHover        : true,
+        globalBGColor       : 'transparent',
+        globalBGImage       : false,
+        animateFirstLayer   : true,
+        yourLogo            : false,
+        yourLogoStyle       : 'position: absolute; z-index: 1001; left: 10px; top: 10px;',
+        yourLogoLink        : false,
+        yourLogoTarget      : '_blank',
+
+        // you can change this settings separately by layers or sublayers with using html style attribute
+
+        slideDirection      : 'top',
+        slideDelay          : 4000,
+        parallaxIn          : .45,
+        parallaxOut         : .45,
+        durationIn          : 1000,
+        durationOut         : 1000,
+        easingIn            : 'easeOutExpo',
+        easingOut           : 'easeInOutQuint',
+        delayIn             : 0,
+        delayOut            : 0
+    });
+});
