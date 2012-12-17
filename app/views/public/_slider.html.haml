@@ -1,0 +1,23 @@
+-##slider
+-#  .ls-layer{:rel => "slidedelay: 3000;"}
+-#    //background
+-#    =image_tag('gallery/l1.png', :class => 'ls-bg', :alt => 'layer1') do
+-#      =image_tag('gallery/l11.png', :class => 'ls-s2', :alt => 'sublayer', :style => "durationin: 2000; easingin: easeOutExpo; slidedirection: top; delayin: 1000" )
+-#      =image_tag('gallery/l12.png', :class => 'ls-s3', :alt => 'sublayer', :rel => "durationin: 2300; easingin: easeOutElastic; slidedirection: bottom; delayin: 1000" )
+
+#layerslider
+  / LayerSlider layer
+  .ls-layer
+    / LayerSlider background
+    %img.ls-bg{:alt => "layer1-background", :src => "#{image_path('gallery/l1.jpg')}" }
+      / LayerSlider sublayers
+      %img.ls-s1{:alt => "layer1-sublayer1", :src => "#{image_path('gallery/l11.png')}"}
+        %img.ls-s2{:alt => "layer1-sublayer2", :src => "#{image_path('gallery/l12.png')}"}
+          %img.ls-s3{:alt => "layer1-sublayer3", :src => "#{image_path('gallery/l13.png')}"}
+  .ls-layer
+    / LayerSlider background
+    %img.ls-bg{:alt => "layer1-background", :src => "#{image_path('gallery/l2.jpg')}" }
+      / LayerSlider sublayers
+      %img.ls-s1{:alt => "layer1-sublayer1", :src => "#{image_path('gallery/l21.png')}"}
+        %img.ls-s2{:alt => "layer1-sublayer2", :src => "#{image_path('gallery/l22.png')}"}
+          %img.ls-s3{:alt => "layer1-sublayer3", :src => "#{image_path('gallery/l23.png')}"}
