@@ -11,5 +11,6 @@ class Consumer < ActiveRecord::Base
 
   #relations
 	has_many :job_answers
-
+	has_many :interfaces
+	
 end

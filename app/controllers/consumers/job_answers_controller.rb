@@ -10,9 +10,15 @@ class Consumers::JobAnswersController < ApplicationController
 	end
 
 	def create
-		# To DO
-		#@job_answer = current_consumer.job_answers.new
-
+	  case params[:job_answer][:interface_type]
+	  when "xing"
+	    puts "XING"
+	  else 
+      puts "NOT IMPLEMENTED YET"
+	  end
+		respond_to do |wants|
+		  wants.js
+		end
 	end
 
 
@@ -20,7 +26,7 @@ class Consumers::JobAnswersController < ApplicationController
  private
 
  	def find_base_data
- 		
+ 		@job_posting = JobPosting.find(params[:job_posting_id]) if params[:job_posting_id]
  	end
 
 

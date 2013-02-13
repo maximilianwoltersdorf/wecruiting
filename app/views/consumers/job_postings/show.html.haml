@@ -18,4 +18,4 @@
 		.job_attribute
 			%span Anforderungen
 			%span= @job_posting.requirements
-	= link_to "Antworten", '#' , :class => "btn btn-primary"
+	= link_to "Antworten", [:new, :consumers, @job_posting, :job_answer] , :class => "btn btn-primary popup", remote: true

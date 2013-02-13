@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20121126074411) do
+ActiveRecord::Schema.define(:version => 20121223140811) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -84,6 +84,9 @@ ActiveRecord::Schema.define(:version => 20121126074411) do
     t.text     "profile"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "interface_type"
+    t.string   "status"
+    t.integer  "interface_id"
   end
 
   create_table "job_postings", :force => true do |t|
@@ -103,6 +106,14 @@ ActiveRecord::Schema.define(:version => 20121126074411) do
     t.text     "message"
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
+  end
+
+  create_table "xing_interfaces", :force => true do |t|
+    t.string   "profile_url"
+    t.integer  "profile_id"
+    t.string   "username"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

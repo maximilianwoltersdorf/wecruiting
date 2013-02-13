@@ -1,0 +1,5 @@
+= semantic_form_for [:consumers, @job_posting, @job_answer], remote: true do |f|
+  = f.inputs do
+    = f.input :interface_type, as: :radio, collection: JobAnswer.interface_types.keys
+  = f.actions do
+    = f.submit
