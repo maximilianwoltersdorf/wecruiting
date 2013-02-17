@@ -6,33 +6,47 @@
     = javascript_include_tag "application"
     = csrf_meta_tags
   %body
-    .container
-      %header
-        = link_to root_path do
-          #logo
-        %ul.nav.nav-pills.fontface
-          %li= link_to "DAS PROJEKT", {:anchor => "the_project"}
-          %li= link_to "DAS TEAM", :anchor => "who_we_are"
-          %li= link_to "DAS ZIEL", :anchor => "how_it_works"
-          %li= link_to "KONTAKT", :anchor => "contact"
-          %li.dropdown
-            = link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
-              LOGIN
-              %b.caret
-            %ul.dropdown-menu
-              = link_to "Kunde", new_customer_session_path, :class => "popup", :remote => true
-              %br
-              = link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
-    =render 'public/slider'
+    %header
+      .container
+        #languages
+          %span= link_to "Ger", locale: "de"
+          %span= link_to "En", locale: "en"
+        .span3
+          = link_to root_path do
+            #logo
+        .span8
+          %ul.nav_top
+            %li= link_to "FÜR UNTERNEHMEN", '#', class: "header_button"
+            %li= link_to "FÜR WECRUITER", '#', class: "header_button"
+            %li= link_to "KONTAKT", '#', class: "header_list", :anchor => "contact"
+            %li.dropdown
+              = link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
+                LOGIN
+                %b.caret
+              %ul.dropdown-menu
+                = link_to "Kunde", new_customer_session_path, :class => "popup", :remote => true
+                %br
+                = link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
+    
+    = t('hello')
+    = render 'eye_catcher'
+    = render 'pitch'
+    .devider= image_tag("blank.gif", class: "devider_logo")
+    = render 'about'
+    .devider= image_tag("blank.gif", class: "devider_logo")
+    = render 'team'
+    .devider= image_tag("blank.gif", class: "devider_logo")
+    = render 'contact'     
+
+    %footer
+      .shadow
+      .container
+        %ul
+          %li= link_to "Impressum", '#'
+          %li= link_to "Kontakt", '#'
+          %li= link_to "About", '#'
+    
     .content
       .container
         = yield
 
-  %footer
-    %p Copyright 2012 by Maximilian Woltersdorf
-    .tabbable.tabs-below
-
-      .ul.nav.nav-tabs
-        = link_to "Impressum", '#'
-        |
-        = link_to "About", '#'
