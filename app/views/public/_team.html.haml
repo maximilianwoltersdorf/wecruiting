@@ -1,0 +1,32 @@
+#team
+  .container
+    .content_headlines
+      %h1 About
+      %h3 Das Team stellt sich vor
+    .profile
+      .picture
+        = image_tag("blank.gif", class: "profile_max")
+      .description
+        %h3 Maximilian Woltersdorf
+        %p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        .social
+          %span= mail_to "maximilian.woltersdorf@wecruiting.de", image_tag("blank.gif", class: "mail_icon")
+          %span= link_to image_tag("blank.gif", class: "xing_icon"), "#"
+    .profile
+      .description
+        %h3 Roman Schneider
+        %p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        .social
+          %span= mail_to "roman.schneider@wecruiting.de", image_tag("blank.gif", class: "mail_icon")
+          %span= link_to image_tag("blank.gif", class: "xing_icon"), "#"
+      .picture
+        = image_tag("blank.gif", class: "profile_roman")
+    .profile
+      .picture
+        = image_tag("blank.gif", class: "profile_wladimir")
+      .description
+        %h3 Wladimir Kusnezow
+        %p Lorem ipsum dolor sit amet, consetetur sadipscing elitr, sed diam nonumy eirmod tempor invidunt ut labore et dolore magna aliquyam erat, sed diam voluptua. At vero eos et accusam et justo duo dolores et ea rebum. Stet clita kasd gubergren, no sea takimata sanctus est Lorem ipsum dolor sit amet.
+        .social
+          %span= mail_to "wladimir.kusnezow@wecruiting.de", image_tag("blank.gif", class: "mail_icon")
+          %span= link_to image_tag("blank.gif", class: "xing_icon"), "#"
