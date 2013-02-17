@@ -1,2 +1,5 @@
 de:
-  hello: "Deutsch"
+  layouts:
+    public:
+      for_customer: "Für Kunden"
+      for_wecruiter: "Für wecruiter"

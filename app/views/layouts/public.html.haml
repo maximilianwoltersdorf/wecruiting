@@ -16,8 +16,8 @@
             #logo
         .span8
           %ul.nav_top
-            %li= link_to "FÜR UNTERNEHMEN", '#', class: "header_button"
-            %li= link_to "FÜR WECRUITER", '#', class: "header_button"
+            %li= link_to t('.for_customer').upcase , '#', class: "header_button"
+            %li= link_to t('.for_wecruiter').upcase, '#', class: "header_button"
             %li= link_to "KONTAKT", '#', class: "header_list", :anchor => "contact"
             %li.dropdown
               = link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
@@ -28,7 +28,6 @@
                 %br
                 = link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
     
-    = t('hello')
     = render 'eye_catcher'
     = render 'pitch'
     .devider= image_tag("blank.gif", class: "devider_logo")
