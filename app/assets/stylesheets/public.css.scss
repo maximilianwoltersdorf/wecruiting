@@ -8,6 +8,10 @@ body {
 	margin-top: -3px;
 }
 
+.container {
+  position: relative;
+}
+
 @font-face {
   font-family: 'BebasRegular';
   src: font-url('BEBAS___-webfont.eot');
@@ -62,6 +66,15 @@ body {
 //------------------------------
 //          HEADER
 //------------------------------
+
+#languages {
+  position:absolute;
+  top: 5px;
+  right: 0px;
+  span {
+    margin-left: 10px;
+  }
+}
 
 #logo {
 	@include background(image-url("logo.png") no-repeat) ;
