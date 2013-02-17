@@ -3,3 +3,7 @@ de:
     public:
       for_customer: "Für Kunden"
       for_wecruiter: "Für wecruiter"
+      imprint: "Impressum"
+      contact: "Kontakt"
+      about: "About"
+      login: "Login"

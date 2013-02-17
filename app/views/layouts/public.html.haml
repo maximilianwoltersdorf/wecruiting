@@ -18,10 +18,10 @@
           %ul.nav_top
             %li= link_to t('.for_customer').upcase , '#', class: "header_button"
             %li= link_to t('.for_wecruiter').upcase, '#', class: "header_button"
-            %li= link_to "KONTAKT", '#', class: "header_list", :anchor => "contact"
+            %li= link_to t('.contact'), '#', class: "header_list", :anchor => "contact"
             %li.dropdown
               = link_to "#", :class => "dropdown-toggle", :data => { :toggle => 'dropdown'} do
-                LOGIN
+                = t('.login')
                 %b.caret
               %ul.dropdown-menu
                 = link_to "Kunde", new_customer_session_path, :class => "popup", :remote => true
@@ -41,9 +41,9 @@
       .shadow
       .container
         %ul
-          %li= link_to "Impressum", '#'
-          %li= link_to "Kontakt", '#'
-          %li= link_to "About", '#'
+          %li= link_to t('.imprint'), '#'
+          %li= link_to t('.contact'), '#'
+          %li= link_to t('.about'), '#'
     
     .content
       .container
