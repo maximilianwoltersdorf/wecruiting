@@ -1,8 +1,8 @@
 de:
   layouts:
     public:
-      for_customer: "Für Kunden"
-      for_wecruiter: "Für wecruiter"
+      for_customer: "Kunden"
+      for_wecruiter: "wecruiter"
       imprint: "Impressum"
       contact: "Kontakt"
       about: "About"
