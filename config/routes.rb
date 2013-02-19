@@ -7,6 +7,7 @@ Wecruiting::Application.routes.draw do
   scope "(:locale)", :locale => /en|de/ do
     
     root :to => "public#index"
+    match "imprint" => "public#imprint"
     
     # Admins
     devise_for :admins

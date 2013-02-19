@@ -360,7 +360,23 @@ footer{
   }
 }
 
-
+#imprint {
+  h1{
+    font-size: 20px;
+  }
+  h2{
+    font-size:14px;
+    line-height: 0px;
+  }
+  #eye_catcher{
+    height: 76px;
+    color: white;
+    margin-bottom: 20px;
+    h1{
+      line-height:4px;
+    }
+  }
+}
 
 .success_msg {
   background-color:#b1cd88;

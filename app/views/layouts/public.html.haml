@@ -28,24 +28,16 @@
                 %br
                 = link_to "Wecruiter", new_consumer_session_path, :class => "popup", :remote => true
     
-    = render 'eye_catcher'
-    = render 'pitch'
-    .devider= image_tag("blank.gif", class: "devider_logo")
-    = render 'about'
-    .devider= image_tag("blank.gif", class: "devider_logo")
-    = render 'team'
-    .devider= image_tag("blank.gif", class: "devider_logo")
-    = render 'contact'     
-
+  
+    = yield
+      
     %footer
       .shadow
       .container
         %ul
-          %li= link_to t('.imprint'), '#'
+          %li= link_to t('.imprint'), imprint_path
           %li= link_to t('.contact'), '#'
           %li= link_to t('.about'), '#'
     
-    .content
-      .container
-        = yield
+
 
