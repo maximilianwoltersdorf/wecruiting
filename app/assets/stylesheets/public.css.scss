@@ -68,6 +68,10 @@ h1, h2, h3 {
   border-color: rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.1) rgba(0, 0, 0, 0.25);
 }
 
+.inline-errors {
+  margin: 3px !important;
+}
+
 //------------------------------
 //          HEADER
 //------------------------------
@@ -303,6 +307,14 @@ header {
 //------------------------------
 
 #contact {
+  #request_message_newsletter_input {
+    input {
+      width: 8%;
+    }
+    label {
+      padding-left: 0px;
+    }
+  }
   #new_request_message {
     margin-top: 30px;
     margin-bottom: 30px;

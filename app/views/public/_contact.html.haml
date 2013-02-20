@@ -3,14 +3,5 @@
     .content_headlines
       %h1 Kontakt
       %h3 Wir freuen uns von Ihnen zu hören
-      
-      = semantic_form_for RequestMessage.new do |f|
-        = f.inputs do
-          .span12
-            .span5
-              = f.input :email, :input_html => { :class => 'input_field_contact' }
-              = f.input :name, :input_html => { :class => 'input_field_contact' }
-            .span6
-              = f.input :message
-              = f.actions do
-                = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "send"
+      #request_form= render 'request_messages/form'
+

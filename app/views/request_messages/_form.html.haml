@@ -1,0 +1,11 @@
+= semantic_form_for @request_message, remote: true do  |f|
+  = f.inputs do
+    .span12
+      .span5
+        = f.input :email
+        = f.input :name
+        = f.input :newsletter, :label  => "Ich möchte den Newsletter erhalten."
+      .span6
+        = f.input :message
+        = f.actions do
+          = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "send"
