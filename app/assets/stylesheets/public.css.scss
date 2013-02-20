@@ -174,8 +174,18 @@ header {
 //          PITCH
 //------------------------------
 
-.we_logo {
-  @include background(image-url("icon_green.png")no-repeat);
+.icon_search_optimization {
+  @include background(image-url("search_icon.png")no-repeat);
+  height:97px;
+}
+
+.icon_better_network {
+  @include background(image-url("network_icon.png")no-repeat);
+  height:97px;
+}
+
+.icon_working {
+  @include background(image-url("works_icon.png")no-repeat);
   height:97px;
 }
 

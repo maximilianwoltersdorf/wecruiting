@@ -7,3 +7,8 @@ en:
       contact: "Contact"
       about: "About"
       login: "Login"
+  public:
+    pitch:
+      search_optimization: "Search optimization"
+      wide_network: "Wide network"
+      working: "Phrase 3"
