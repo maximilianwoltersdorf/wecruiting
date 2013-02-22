@@ -216,6 +216,24 @@ header {
 
 
 //------------------------------
+//          ABOUT
+//------------------------------
+
+#about {
+  background: #1f261f;
+  position:relative;
+  text-align:center;
+  .how_it_works {
+    @include background(image-url("how_it_works.png") no-repeat);
+    height: 1219px;
+    width: 1552px;
+    margin-left: auto;
+    margin-right: auto;
+  }
+}
+
+
+//------------------------------
 //          TEAM
 //------------------------------
 

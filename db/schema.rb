@@ -84,9 +84,6 @@ ActiveRecord::Schema.define(:version => 20130219104848) do
     t.text     "profile"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
-    t.string   "interface_type"
-    t.string   "status"
-    t.integer  "interface_id"
   end
 
   create_table "job_postings", :force => true do |t|
@@ -107,14 +104,6 @@ ActiveRecord::Schema.define(:version => 20130219104848) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.boolean  "newsletter"
-  end
-
-  create_table "xing_interfaces", :force => true do |t|
-    t.string   "profile_url"
-    t.integer  "profile_id"
-    t.string   "username"
-    t.datetime "created_at",  :null => false
-    t.datetime "updated_at",  :null => false
   end
 
 end
