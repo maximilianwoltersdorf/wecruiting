@@ -13,7 +13,24 @@ de:
       about: "About"
       login: "Login"
   public:
+    eye_catcher:
+      pitch_1: "Zugriff auf ein großes Netzwerk an Headhuntern"
+      pitch_2: "Direkte Schnittstelle zu Xing, LinkedIn und Absolventa"
+      pitch_3: "Schnell und unkompliziert passende Bewerber kennenlernen"
+      
     pitch:
       search_optimization: "Suchoptimierung"
+      search_optimization_pitch: "Überlassen Sie die komplette Suche nach neuen Mitarbeitern der Crowd! Einfach Anforderungen 
+                                  festlegen und hochwertige Ergebnisse erhalten.  Wählen Sie aus einer Liste interessierter Bewerber die 
+                                  passendsten aus."
       wide_network: "Weites Netzwerk"
-      working: "Phrase 3"
+      wide_network_pitch:   "Nutzen Sie die Reichweite der vielen individuellen Netzwerke unserer Crowd. Bei uns gepostet, verteilen die
+                            wecruiter ihre Stellenausschreibungen in ihren Netzwerken. Dabei werden automatisierte Schnittstellen zu Xing, 
+                            linkedIn und Absolventa angeboten."
+      know_how: "Hohe Effizienz"
+      know_how_pitch: "Verlassen Sie sich auf die schnelle und effiziente Arbeit unserer Crowd. Erhalten Sie hochwertige Ergebnisse 
+                       bereits kurz nach dem Ausschreiben einer Stelle. Zahlen Sie nur für Ergebnisse, die Ihre Erwartungen erfüllen!"
+    team:
+      profile_max: "Max studierte Wirtschaftsinformatik an der HWR. Er beschäftgite sich vor allem mit neuen Geschäftsmodellen und behandelte im Rahmen seiner Abschlussarbeit das Themenfeld Crowdsourcing mit dem Fokus der Qualitätssicherung. Berufliche Erfahrungen konnte er durch Tätigkeiten im berliner Startupumfeld sammeln. Dabei begeisterte er sich vor allem für die Webentwicklung mit Ruby on Rails, sowie agile Frameworks zur Produkt- und Geschäftsmodellentwicklung. "
+      profile_roman: ""
+      profile_wlad: ""
