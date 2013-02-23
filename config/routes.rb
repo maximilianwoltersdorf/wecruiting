@@ -3,37 +3,44 @@ Wecruiting::Application.routes.draw do
 
   resources :request_messages
 
-  # Admins
-  devise_for :admins
-  namespace :admins do
-    authenticate :admin do
-      root :to => 'home#index'
+  
+  scope "(:locale)", :locale => /en|de/ do
+    
+    root :to => "public#index"
+    match "imprint" => "public#imprint"
+    
+    # Admins
+    devise_for :admins
+    namespace :admins do
+      authenticate :admin do
+        root :to => 'home#index'
+      end
     end
-  end
 
-  # Customers
-  devise_for :customers
-  namespace :customers do
-    authenticate :customer do
-      root :to => 'home#index'
+    # Customers
+    devise_for :customers
+    namespace :customers do
+      authenticate :customer do
+        root :to => 'home#index'
+      end
+      resources :departments do
+        resources :job_postings
+      end
     end
-    resources :departments do
-      resources :job_postings
-    end
-  end
 
-  # Consumers
-  devise_for :consumers
-  namespace :consumers do
-    authenticate :consumer do
-      root :to => 'home#index'
+    # Consumers
+    devise_for :consumers
+    namespace :consumers do
+      authenticate :consumer do
+        root :to => 'home#index'
+      end
+      resources :job_postings do
+        resources :job_answers
+      end
     end
-    resources :job_postings do
-      resources :job_answers
-    end
+    
   end
-
-  root :to => "public#index"
+  
 
 
 
