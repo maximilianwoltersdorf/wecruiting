@@ -1,51 +1,7 @@
-.row
-  .span12.box_shadow
-    - if flash.any?
-      .success_msg
-        = flash[:success]
-    #the_project
-      %h3.arrow_bg The project
-      .arrow_bg_left
-    .span12
-      .span6
-        .info_box
-          .icon_grey.about
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-      .span6
-        .info_box
-          .icon_grey.who
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-
-    #who_we_are
-      %h3.arrow_bg Who we are
-      .arrow_bg_left
-    .span12
-      .span4.center_text
-        %h3.sub_title Max Woltersdorf
-        %h4.small_title development & management
-        .person_image_wrapper
-          =image_tag 'person_dummy.png'
-        .info_box.person
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-
-      .span4.center_text
-        %h3.sub_title Waldemar Kusnezow
-        %h4.small_title development & management
-        .person_image_wrapper
-          =image_tag 'waldemar_kusnezow.png'
-        .info_box.person
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-
-      .span4.center_text
-        %h3.sub_title Roman Schneider
-        %h4.small_title development & management
-        .person_image_wrapper
-          =image_tag 'roman_schneider.jpg'
-        .info_box.person
-          Lorem ipsum dolor sit amet, consectetuer adipiscing elit. Aenean commodo ligula eget dolor. Aenean massa. Cum sociis natoque penatibus et magnis dis parturient montes, nascetur ridiculus mus. Donec quam felis, ultricies nec, pellentesque eu, pretium quis, sem. Nulla consequat massa quis enim. Donec pede justo, fringilla vel, aliquet nec, vulputate eget, arcu. In enim justo, rhoncus ut, imperdiet a, venenatis vitae, justo.
-    #how_it_works
-      %h3.arrow_bg How it works
-      .arrow_bg_left
-    #contact
-      = render "contact"
-
+= render 'public/eye_catcher'
+= render 'public/pitch'
+= render 'public/about'
+.devider= image_tag("blank.gif", class: "devider_logo")
+= render 'public/team'
+.devider= image_tag("blank.gif", class: "devider_logo")
+= render 'public/contact'

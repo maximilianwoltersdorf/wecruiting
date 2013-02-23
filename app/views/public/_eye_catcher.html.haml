@@ -1,0 +1,14 @@
+#eye_catcher
+  .shadow
+  .container
+    .headlines
+      %p You're hiring? We'cruiting!
+      %p.less Crowdsourced Recruiting durch professionelle Headhunter. 
+    .span6
+      %ul.pitch_eyecatcher
+        %li= t('.pitch_1') 
+        %li= t('.pitch_2') 
+        %li= t('.pitch_3')
+    .span6
+      #get_member_arrow
+      = link_to "Jetzt registrieren", root_path, class: "cta_button"

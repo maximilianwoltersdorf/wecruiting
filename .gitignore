@@ -17,4 +17,7 @@
 #rubymine config
 /.idea
 
+#ignore database.yml
+/config/database.yml
+
 .rvmrc
