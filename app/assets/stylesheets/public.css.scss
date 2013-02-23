@@ -33,6 +33,7 @@ h1, h2, h3 {
   margin-right: 10px;
   margin-left: 0;
   position:relative;
+  margin-bottom: 20px;
 }
 
 
@@ -225,7 +226,7 @@ header {
   text-align:center;
   .how_it_works {
     @include background(image-url("how_it_works.png") no-repeat);
-    height: 1219px;
+    height: 789px;
     width: 1552px;
     margin-left: auto;
     margin-right: auto;
@@ -316,6 +317,18 @@ header {
   }
 }
 
+.devider_team {
+  position:relative;
+  text-align:center;
+  .devider_logo {
+    @include background(image-url("separator_icon.png") no-repeat);
+    height: 162px;
+    width: 162px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -95px;
+  }
+}
 
 
 
