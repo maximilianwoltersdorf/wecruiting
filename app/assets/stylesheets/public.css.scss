@@ -133,7 +133,7 @@ header {
   .headlines {
     text-align: center;
     color: white;
-    margin-top: -14px;
+    margin-top: -11px;
     p {
       font-size: 20px;
       &.less{
@@ -155,16 +155,17 @@ header {
   }
   #get_member_arrow {
     @include background(image-url("pfeil.png") no-repeat);
-    width: 349px;
+    width: 368px;
     height: 81px;
   }
   a {
     text-align:center;
-    line-height:78px;
+    line-height:81px;
     color:white;
     font-size: 20px;
     &.cta_button {
       float:right;
+      font-weight:bold;
     }
   }
 }
