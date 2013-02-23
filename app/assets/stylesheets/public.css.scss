@@ -33,6 +33,7 @@ h1, h2, h3 {
   margin-right: 10px;
   margin-left: 0;
   position:relative;
+  margin-bottom: 20px;
 }
 
 
@@ -132,7 +133,7 @@ header {
   .headlines {
     text-align: center;
     color: white;
-    margin-top: -14px;
+    margin-top: -11px;
     p {
       font-size: 20px;
       &.less{
@@ -154,16 +155,17 @@ header {
   }
   #get_member_arrow {
     @include background(image-url("pfeil.png") no-repeat);
-    width: 349px;
+    width: 368px;
     height: 81px;
   }
   a {
     text-align:center;
-    line-height:78px;
+    line-height:81px;
     color:white;
     font-size: 20px;
     &.cta_button {
       float:right;
+      font-weight:bold;
     }
   }
 }
@@ -225,7 +227,7 @@ header {
   text-align:center;
   .how_it_works {
     @include background(image-url("how_it_works.png") no-repeat);
-    height: 1219px;
+    height: 789px;
     width: 1552px;
     margin-left: auto;
     margin-right: auto;
@@ -316,6 +318,18 @@ header {
   }
 }
 
+.devider_team {
+  position:relative;
+  text-align:center;
+  .devider_logo {
+    @include background(image-url("separator_icon.png") no-repeat);
+    height: 162px;
+    width: 162px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: -95px;
+  }
+}
 
 
 
