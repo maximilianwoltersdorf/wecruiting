@@ -9,8 +9,8 @@
     %header
       .container
         #languages
-          %span= link_to "Ger", locale: "de"
-          %span= link_to "En", locale: "en"
+          %span= link_to(image_tag("flag_de.png", :size => "14x11", :border => 0), locale: "de")
+          %span= link_to(image_tag("flag_en.png", :size => "14x11", :border => 0), locale: "en")
         .span3
           = link_to root_path do
             #logo
