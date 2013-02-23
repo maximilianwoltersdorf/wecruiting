@@ -8,6 +8,7 @@ Wecruiting::Application.routes.draw do
     
     root :to => "public#index"
     match "imprint" => "public#imprint"
+    match "interview" => "public#interview"
     
     # Admins
     devise_for :admins
@@ -15,6 +16,7 @@ Wecruiting::Application.routes.draw do
       authenticate :admin do
         root :to => 'home#index'
       end
+      resources :interview_questions
     end
 
     # Customers

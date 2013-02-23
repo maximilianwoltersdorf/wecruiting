@@ -1,0 +1,5 @@
+= semantic_form_for [:admins, @interview_question] , :method => "post" do |f|
+  = f.inputs do 
+    = f.input :question_text
+  = f.actions do
+    = f.submit

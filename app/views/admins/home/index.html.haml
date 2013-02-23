@@ -1,5 +1,5 @@
-Admin Startseite
+%h1 Admin Startseite
 
-
-- if admin_signed_in? 
-	= link_to "Logout", destroy_admin_session_path, :method => :delete
+= link_to "Logout", destroy_admin_session_path, :method => :delete
+%br
+= link_to "Zum Fragebogen", admins_interview_questions_path, class: "cta_button"
