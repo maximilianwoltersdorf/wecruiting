@@ -10,16 +10,17 @@ gem 'pg'
 gem 'haml'
 gem 'state_machine'
 gem 'ruby-graphviz'
-gem 'unicorn'
+#gem 'unicorn'
 gem 'devise'
 gem 'less-rails-bootstrap'
-gem "compass_twitter_bootstrap"
+gem 'compass_twitter_bootstrap'
 gem 'sass-rails'
-gem "compass-rails"
+gem 'compass-rails'
 gem 'coffee-rails'
 gem 'therubyracer'
 gem 'formtastic'
 gem 'jquery-ui-rails'
+gem 'mysql2'
 
 gem 'httparty'
 gem 'oauth'
@@ -37,6 +38,8 @@ group :assets do
 end
 
 gem 'jquery-rails'
+
+
 
 # To use ActiveModel has_secure_password
 # gem 'bcrypt-ruby', '~> 3.0.0'
