@@ -56,6 +56,9 @@ h1, h2, h3 {
   @include background(image-url("cta_btn.png") no-repeat);
   width: 273px;
   height: 79px;
+  span{
+    margin-right: 15px;
+  }
 }
 
 .header_button {
