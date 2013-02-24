@@ -20,7 +20,6 @@ gem 'coffee-rails'
 gem 'therubyracer'
 gem 'formtastic'
 gem 'jquery-ui-rails'
-gem 'mysql2'
 
 gem 'httparty'
 gem 'oauth'
