@@ -3,15 +3,18 @@
 #
 #   Ensure the SQLite 3 gem is defined in your Gemfile
 #   gem 'sqlite3'
+
 development:
   adapter: mysql2
   encoding: utf8
   reconnect: false
-  database: wecruiting_development
+  database: wecruiting
   pool: 5
-  username: root
-  password:
-  socket: /var/run/mysqld/mysqld.sock
+  username: wecruiting
+  password: "WeCruiting!"
+  host: localhost
+  port: 3306
+  #socket: /var/run/mysqld/mysqld.sock
   # mac /tmp/mysql.sock
   # linux /var/run/mysqld/mysqld.sock
 
