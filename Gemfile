@@ -10,7 +10,7 @@ gem 'pg'
 gem 'haml'
 gem 'state_machine'
 gem 'ruby-graphviz'
-#gem 'unicorn'
+gem 'unicorn'
 gem 'devise'
 gem 'less-rails-bootstrap'
 gem 'compass_twitter_bootstrap'
@@ -31,7 +31,7 @@ group :assets do
   #gem 'compass'
 
   # See https://github.com/sstephenson/execjs#readme for more supported runtimes
-  # gem 'therubyracer', :platform => :ruby
+  gem 'therubyracer', :platform => :ruby
 
   gem 'uglifier', '>= 1.0.3'
 end
