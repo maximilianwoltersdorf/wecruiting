@@ -1,4 +1,5 @@
 class Admins::InterviewQuestionsController < ApplicationController
+  layout 'admin'
   
   def index
     @interview_questions = InterviewQuestion.all

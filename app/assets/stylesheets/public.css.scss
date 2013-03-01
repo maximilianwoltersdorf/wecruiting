@@ -1,7 +1,5 @@
 @import "compass";
 
-
-
 body {
 	width: 103%;
 	margin:auto;
@@ -84,6 +82,7 @@ h1, h2, h3 {
     margin-left: 10px;
   }
 }
+
 
 #logo {
 	@include background(image-url("logo.png") no-repeat) ;
