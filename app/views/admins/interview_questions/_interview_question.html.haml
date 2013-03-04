@@ -1,0 +1,7 @@
+%p
+  = interview_question.id
+  = interview_question.question_text
+  = link_to "bearbeiten", '#'
+  = link_to "löschen", admins_interview_question_path(params[:locale], interview_question), :method => :delete, confirm: "Sicher?"
+  
+%p= interview_question.interview_answers.present? ? ( render interview_question.interview_answers ) : "Keine Antworten vorhanden"
