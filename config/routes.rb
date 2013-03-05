@@ -2,6 +2,7 @@ Wecruiting::Application.routes.draw do
 
 
   resources :request_messages
+  resources :interview_answers
 
   
   scope "(:locale)", :locale => /en|de/ do
