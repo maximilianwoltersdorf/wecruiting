@@ -19,7 +19,7 @@ class InterviewAnswersController < ApplicationController
     else
       InterviewAnswer.create(
         :user_name              => interview_answer[:user_name],
-        :user_answer            => interview_answer[:user_email]
+        :user_email             => interview_answer[:user_email]
       )
     end
 
