@@ -7,18 +7,25 @@ class InterviewAnswersController < ApplicationController
   end
 
 	def create
+    puts params[:interview_answer]
     interview_answer = params[:interview_answer]
     
-    # hier muss irgendwie für jede Antwort ein eigener Record in die DB gespeichert werden. Siehe dazu auch Fehler im Formular im Frontend.
-    InterviewAnswer.create(
-      :interview_question_id  => interview_answer[:interview_question_id],
-      :user_answer    				=> interview_answer[:user_answer],
-      :user_email							=> interview_answer[:user_email],
-      :newsletter							=> interview_answer[:newsletter]
-    )
-    puts params[:interview_answer]
-    # flash[:notice] = "Vielen Dank für Ihr Feedback!" # TODO
-    redirect_to root_path
+    unless interview_answer[:user_email]
+      InterviewAnswer.create(
+        :user_name              => interview_answer[:user_name],
+        :interview_question_id  => interview_answer[:interview_question_id],
+        :user_answer            => interview_answer[:user_answer]
+      )
+    else
+      InterviewAnswer.create(
+        :user_name              => interview_answer[:user_name],
+        :user_answer            => interview_answer[:user_email]
+      )
+    end
+
+    respond_to do |wants|
+      wants.js
+    end
   end
 
 end
