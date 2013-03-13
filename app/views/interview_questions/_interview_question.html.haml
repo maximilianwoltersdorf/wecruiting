@@ -1,6 +1,6 @@
 %ul
 -@interview_questions.each do |question|
-  = semantic_form_for InterviewAnswer.new, :remote => true, :html => { :id => "question_#{question.id}" } do |f|
+  = semantic_form_for question.interview_answers.new, :remote => true, :html => { :id => "question_#{question.id}" } do |f|
     = f.inputs do
       %li= question.question_text
       = f.input :interview_question_id, :as => :hidden, :value => question.id

@@ -12,13 +12,13 @@ class InterviewAnswersController < ApplicationController
     
     unless interview_answer[:user_email]
       InterviewAnswer.create(
-        :user_name              => interview_answer[:user_name],
+        :user_token             => interview_answer[:user_token],
         :interview_question_id  => interview_answer[:interview_question_id],
         :user_answer            => interview_answer[:user_answer]
       )
     else
       InterviewAnswer.create(
-        :user_name              => interview_answer[:user_name],
+        :user_token             => interview_answer[:user_token],
         :user_email             => interview_answer[:user_email],
         :newsletter             => interview_answer[:newsletter]
       )
