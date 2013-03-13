@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130223134120) do
+ActiveRecord::Schema.define(:version => 20130313081715) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -90,8 +90,9 @@ ActiveRecord::Schema.define(:version => 20130223134120) do
   create_table "interview_questions", :force => true do |t|
     t.text     "question_text"
     t.integer  "display_count"
-    t.datetime "created_at",    :null => false
-    t.datetime "updated_at",    :null => false
+    t.datetime "created_at",                      :null => false
+    t.datetime "updated_at",                      :null => false
+    t.boolean  "visible",       :default => true
   end
 
   create_table "job_answers", :force => true do |t|
@@ -101,6 +102,9 @@ ActiveRecord::Schema.define(:version => 20130223134120) do
     t.text     "profile"
     t.datetime "created_at",     :null => false
     t.datetime "updated_at",     :null => false
+    t.string   "interface_type"
+    t.string   "status"
+    t.integer  "interface_id"
   end
 
   create_table "job_postings", :force => true do |t|
@@ -121,6 +125,14 @@ ActiveRecord::Schema.define(:version => 20130223134120) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.boolean  "newsletter"
+  end
+
+  create_table "xing_interfaces", :force => true do |t|
+    t.string   "profile_url"
+    t.integer  "profile_id"
+    t.string   "username"
+    t.datetime "created_at",  :null => false
+    t.datetime "updated_at",  :null => false
   end
 
 end

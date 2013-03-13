@@ -2,7 +2,7 @@ class InterviewQuestionsController < ApplicationController
   layout 'public'
   
   def index
-    @interview_questions = InterviewQuestion.order('RAND()').take(5)
+    @interview_questions = InterviewQuestion.visible.order('RAND()').take(5)
   end
   
   def new

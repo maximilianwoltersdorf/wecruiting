@@ -12,4 +12,17 @@ body{
   border-color: #575757;
 }
 
+p {
+  &.visible {
+    color: green;
+    float:left;
+    width: 60%;
+  }
+  &.unvisible {
+    color: red;
+    float:left;
+    width: 60%;
+  }
+}
+
 
