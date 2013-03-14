@@ -2,7 +2,17 @@ Wecruiting::Application.routes.draw do
 
 
   resources :request_messages
+  resources :interview_answers
+  resources :interview_questions
 
+  # Admins
+  devise_for :admins
+  namespace :admins do
+    authenticate :admin do
+      root :to => 'home#index'
+    end
+    resources :interview_questions
+  end
   
   scope "(:locale)", :locale => /en|de/ do
     
@@ -10,14 +20,7 @@ Wecruiting::Application.routes.draw do
     match "imprint" => "public#imprint"
     match "interview" => "public#interview"
     
-    # Admins
-    devise_for :admins
-    namespace :admins do
-      authenticate :admin do
-        root :to => 'home#index'
-      end
-      resources :interview_questions
-    end
+
 
     # Customers
     devise_for :customers

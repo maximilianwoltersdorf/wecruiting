@@ -1,0 +1,15 @@
+
+$(".big_headline").after('<div id="saving_info">Ihre Antwort wird gespeichert ...</div>');
+
+setTimeout((function() {
+	if ("<%= params[:interview_answer][:interview_question_id] %>" != "") {
+    question_element = "#question_"+"<%= params[:interview_answer][:interview_question_id] %>";
+  }
+  else {
+  	question_element = "#user_data";
+  }
+  $(question_element).fadeOut();
+  $("#saving_info").fadeOut();
+
+}), 1500);
+

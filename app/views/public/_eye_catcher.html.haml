@@ -1,6 +1,6 @@
 #eye_catcher
   .shadow
-  .container
+  .container.eye_catcher_top
     .headlines
       %p You're hiring? We'cruiting!
       %p.less Crowdsourced Recruiting durch professionelle Headhunter. 
@@ -11,5 +11,5 @@
         %li= t('.pitch_3')
     .span6
       #get_member_arrow
-      = link_to root_path, class: "cta_button" do
+      = link_to interview_questions_path, class: "cta_button" do
         %span Zur Umfrage
