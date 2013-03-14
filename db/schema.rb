@@ -11,7 +11,7 @@
 #
 # It's strongly recommended to check this file into your version control system.
 
-ActiveRecord::Schema.define(:version => 20130313122834) do
+ActiveRecord::Schema.define(:version => 20130314163957) do
 
   create_table "admins", :force => true do |t|
     t.string   "email",                  :default => "", :null => false
@@ -80,9 +80,6 @@ ActiveRecord::Schema.define(:version => 20130313122834) do
   create_table "interview_answers", :force => true do |t|
     t.integer  "interview_question_id"
     t.text     "user_answer"
-    t.string   "user_name"
-    t.string   "user_email"
-    t.boolean  "newsletter"
     t.datetime "created_at",            :null => false
     t.datetime "updated_at",            :null => false
     t.string   "user_token"
@@ -126,6 +123,7 @@ ActiveRecord::Schema.define(:version => 20130313122834) do
     t.datetime "created_at", :null => false
     t.datetime "updated_at", :null => false
     t.boolean  "newsletter"
+    t.string   "user_token"
   end
 
   create_table "xing_interfaces", :force => true do |t|
