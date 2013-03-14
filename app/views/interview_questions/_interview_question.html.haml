@@ -1,4 +1,12 @@
 %ul
+= semantic_form_for InterviewAnswer.new, :remote => true, :html => { :id => "user_data" } do |f|
+  = f.inputs do
+    = f.input :user_email, :label => "Email (optional)"
+    = f.input :newsletter
+
+  = f.actions do
+    = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "save"
+    
 -@interview_questions.each do |question|
   = semantic_form_for question.interview_answers.new, :remote => true, :html => { :id => "question_#{question.id}" } do |f|
     = f.inputs do
@@ -9,10 +17,4 @@
     = f.actions do
       = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "save"
 
-= semantic_form_for InterviewAnswer.new, :remote => true, :html => { :id => "user_data" } do |f|
-  = f.inputs do
-    = f.input :user_email, :label => "Email (optional)"
-    = f.input :newsletter
 
-  = f.actions do
-    = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "save"
