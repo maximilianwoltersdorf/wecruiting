@@ -1,0 +1,17 @@
+:coffeescript
+  randomUser = (length) ->
+    chars = "abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ1234567890"
+    pass = ""
+    x = 0
+    while x < length
+      i = Math.floor(Math.random() * 62)
+      pass += chars.charAt(i)
+      x++
+    pass
+
+  userhash = randomUser(8)
+	
+  $("form").each () ->
+    $(this).prepend('<input type=\"hidden\" value=\"'+userhash+'\" name=\"interview_answer[user_token]\" />');
+
+  
