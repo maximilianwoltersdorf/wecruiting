@@ -3,7 +3,7 @@ class StaffMailer < ActionMailer::Base
 
   def notify_team(request_message)
   	@request_message = request_message
-  	mail(:to => "info@wecruiting.de", :subject => "New request message")
+  	mail(:to => "team@wecruiting.de", :subject => "New request message")
   end
   
   def confirm_request(request_message)
