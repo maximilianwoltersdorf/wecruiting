@@ -1,5 +1,6 @@
 class StaffMailer < ActionMailer::Base
-  default from: "info@wecruiting.de"
+  default from: '"Wecruiting Info" <info@wecruiting.de>'
+  
 
   def notify_team(request_message)
   	@request_message = request_message
