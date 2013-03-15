@@ -1,5 +1,4 @@
 %p{class: interview_question.visible? ? "visible" : "unvisible" }
-  = interview_question.id
   = interview_question.question_text
 %p.tools
   = link_to "bearbeiten", edit_admins_interview_question_path(interview_question)
