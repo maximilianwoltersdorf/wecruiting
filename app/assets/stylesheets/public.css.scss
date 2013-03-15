@@ -101,6 +101,11 @@ a:hover.header_button {
   }
 }
 
+.devider_small {
+  border-bottom: 1px solid #000;
+  margin-bottom: 30px;
+}
+
 //------------------------------
 //          HEADER
 //------------------------------
@@ -506,6 +511,10 @@ footer{
   margin-top: 20px;
 }
 
+.formtastic .choice label input, .formtastic .boolean label input {
+  margin: -5px 5px 0px 0px;
+  line-height: 100%;
+}
 
 
 textarea:focus,

@@ -5,8 +5,11 @@
     
   
 .container
-  %p Vielen Dank, dass Sie sich die Zeit nehmen. Die erhobenen Daten werden im Rahmen einer Studie zu Verbesserungspotenzialen im Bereich Personalbeschaffung verwendet.         
-  %p Die Umfrage dauert ca. 10 Minuten. Sie können die Umfrage auch unterbrechen und zu einem späteren Zeitpunkt zurückkehren.
-  %p
-    %i Alle Angaben sind optional
+  #survey_info
+    %p Vielen Dank, dass Sie sich die Zeit nehmen. Die erhobenen Daten werden im Rahmen einer Studie zu Verbesserungspotenzialen im Bereich Personalbeschaffung verwendet.         
+    %p Die Umfrage dauert ca. 10 Minuten. Sie können die Umfrage auch unterbrechen und zu einem späteren Zeitpunkt zurückkehren.
+    %p
+      %i
+        %b Alle Angaben sind optional.
   = render "interview_questions/interview_question"
+  %br

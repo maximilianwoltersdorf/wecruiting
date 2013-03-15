@@ -1,20 +1,22 @@
 %ul.survey
   %h3 Angaben zur Person 
+  .devider_small
   #survey_request_form
     = semantic_form_for RequestMessage.new, :remote => true, :html => { :id => "user_data" } do |f|
       = f.inputs do
-        = f.input :email, :label => "Email (optional)"
-        = f.input :name
+        = f.input :email,:required => false, :label => "Email (optional)"
+        = f.input :name, :required => false
         = f.input :newsletter, :label => "Ich möchte über den Projektfortschritt informiert werden."
 
       = f.actions do
         = f.action :submit, :button_html => { :class => "header_button", :disable_with => 'Wait...' }, :label => "Angaben speichern"
     
-  %h3 Fragen  
+  %h3 Fragen
+  .devider_small
   -@interview_questions.each do |question|
     = semantic_form_for question.interview_answers.new, :remote => true, :html => { :id => "question_#{question.id}" } do |f|
       = f.inputs do
-        %li= question.question_text
+        %li.question= question.question_text
         = f.input :interview_question_id, :as => :hidden, :value => question.id
         = f.input :user_answer, :input_html => { :rows => 8 }, :label => false
 

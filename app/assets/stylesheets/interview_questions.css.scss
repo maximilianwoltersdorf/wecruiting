@@ -2,26 +2,52 @@
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
 
+#survey_info {
+  background: #ababab;
+  padding:10px;
+  border: 1px solid #6d992a;
+  border-radius: 3px;
+  background: #83b43a;
+  color: #FFF;
+}
+
+#survey_request_form {
+  width: 500px;
+}
+
 ul.survey {
   position: relative;
   width: 880px;
+  padding: 0;
+  margin: 0;
+  li.question {
+    padding-bottom: 7px;
+  }
   h3 {
     font-size: 15px;
     margin-bottom: 10px;
+    height:40px;
   }
   .header_button {
     padding: 5px;
   }
   .formtastic {
+    .stringish input {
+      width: 99%;
+    }
     .actions {
-      width: 72%;
+      width: 99%;
+    }
+    .text textarea {
+      width: 99%;
     }
   }
   .formtastic .button, 
   .formtastic .action {
-    text-align:center;
-    padding-right:0.5em;
+    text-align: right;
+    padding-right: 0;
     float:none;
   }
 }
+
 
