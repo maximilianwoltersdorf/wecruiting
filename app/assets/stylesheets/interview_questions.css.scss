@@ -1,3 +1,27 @@
 // Place all the styles related to the InterviewQuestions controller here.
 // They will automatically be included in application.css.
 // You can use Sass (SCSS) here: http://sass-lang.com/
+
+ul.survey {
+  position: relative;
+  width: 880px;
+  h3 {
+    font-size: 15px;
+    margin-bottom: 10px;
+  }
+  .header_button {
+    padding: 5px;
+  }
+  .formtastic {
+    .actions {
+      width: 72%;
+    }
+  }
+  .formtastic .button, 
+  .formtastic .action {
+    text-align:center;
+    padding-right:0.5em;
+    float:none;
+  }
+}
+

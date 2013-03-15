@@ -88,6 +88,19 @@ a:hover.header_button {
   margin: 3px !important;
 }
 
+.headline_dark {
+  @include background(image-url("eyecatcher_bg.png"));
+  height: 80px;
+  width: 100%;
+  position:relative;
+  margin-bottom: 22px;
+  h1 {
+    color: white;
+    margin-top: -26px;
+    font-size: 25px;
+  }
+}
+
 //------------------------------
 //          HEADER
 //------------------------------
@@ -470,7 +483,7 @@ footer{
 //          FORMTASTIC
 //------------------------------
 
-#saving_info {
+.saving_info {
   color:#46aa45;
   font-style: italic;
   font-size: 12px;
@@ -489,6 +502,11 @@ footer{
   overflow: hidden;
   padding-left: 0;
 }
+.formtastic.interview_answer{
+  margin-top: 20px;
+}
+
+
 
 textarea:focus,
 input[type="text"]:focus,
