@@ -8,7 +8,7 @@ class StaffMailer < ActionMailer::Base
   
   def confirm_request(request_message)
     @request_message = request_message
-  	mail(:to => "info@wecruiting.de", :subject => "Kontaktanfrage wecruiting")
+  	mail(:to => request_message.email, :subject => "Kontaktanfrage wecruiting")
   end
 
 end

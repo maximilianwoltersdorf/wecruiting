@@ -11,6 +11,6 @@ class RequestMessage < ActiveRecord::Base
 
   def notify_and_confirm
     StaffMailer.notify_team(self).deliver
-    StaffMailer.confirm_request(self).deliver
+    StaffMailer.confirm_request(self).deliver if self.email.present?
   end
 end
