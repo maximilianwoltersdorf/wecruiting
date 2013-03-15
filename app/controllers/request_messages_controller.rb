@@ -1,5 +1,5 @@
-class RequestMessagesController < ApplicationController
-
+class RequestMessagesController < ApplicationController	
+	
 	def create
 	  @request_message = RequestMessage.create(params[:request_message].merge(:user_token => cookies[:user_token]))
 	  @request_message = RequestMessage.new if @request_message.id?
@@ -7,5 +7,7 @@ class RequestMessagesController < ApplicationController
 	    wants.js
 	  end
 	end
+	
+
 
 end

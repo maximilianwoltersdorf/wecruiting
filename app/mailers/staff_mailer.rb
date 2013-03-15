@@ -1,9 +1,14 @@
 class StaffMailer < ActionMailer::Base
   default from: "info@wecruiting.de"
 
-  def request_message(request_message)
+  def notify_team(request_message)
   	@request_message = request_message
-  	mail(:to => "info@wecruiting.de", :subject => "New request message from #{request_message.name}")
+  	mail(:to => "info@wecruiting.de", :subject => "New request message")
+  end
+  
+  def confirm_request(request_message)
+    @request_message = request_message
+  	mail(:to => "info@wecruiting.de", :subject => "Kontaktanfrage wecruiting")
   end
 
 end
