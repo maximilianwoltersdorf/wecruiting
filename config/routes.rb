@@ -4,6 +4,7 @@ Wecruiting::Application.routes.draw do
   resources :request_messages
   resources :interview_answers
   resources :interview_questions
+  match "survey" => "interview_questions#index"
 
   # Admins
   devise_for :admins

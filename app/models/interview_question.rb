@@ -5,6 +5,6 @@ class InterviewQuestion < ActiveRecord::Base
   
   #scopes
   
-  scope :visible, where(:visible => true)
+  scope :visible,           where(:visible => true)
   
 end
