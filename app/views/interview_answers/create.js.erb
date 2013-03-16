@@ -1,5 +1,5 @@
 
-$("#question_"+"<%= params[:interview_answer][:interview_question_id] %>").after('<div class="saving_info">Ihre Antwort wird gespeichert ...</div>');
+$("li.question_<%= params[:interview_answer][:interview_question_id] %>").after('<div class="saving_info">Ihre Antwort wird gespeichert ...</div>');
 
 setTimeout((function() {
 	if ("<%= params[:interview_answer][:interview_question_id] %>" != "") {
@@ -8,8 +8,8 @@ setTimeout((function() {
   else {
   	question_element = "#user_data";
   }
-  $(question_element).fadeOut();
-  $(".saving_info").fadeOut();
+  $(question_element).fadeOut().remove();
+  $(".saving_info").fadeOut().remove();
 
 }), 1500);
 
