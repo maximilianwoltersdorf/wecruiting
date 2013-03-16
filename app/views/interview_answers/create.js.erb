@@ -2,7 +2,7 @@
 $("li.question_<%= params[:interview_answer][:interview_question_id] %>").after('<div class="saving_info">Ihre Antwort wird gespeichert ...</div>');
 
 setTimeout((function() {
-	if ("<%= params[:interview_answer][:interview_question_id] %>" != "") {
+  if ("<%= params[:interview_answer][:interview_question_id] %>" != "") {
     question_element = "#question_"+"<%= params[:interview_answer][:interview_question_id] %>";
   }
   else {
@@ -12,4 +12,8 @@ setTimeout((function() {
   $(".saving_info").fadeOut().remove();
 
 }), 1500);
+
+//if ($("form").length == 0){
+	//alert("QQQQQQQQQQQQ");
+//}
 
