@@ -10,10 +10,18 @@ setTimeout((function() {
   }
   $(question_element).fadeOut().remove();
   $(".saving_info").fadeOut().remove();
-
+  if (($("form").length == 0) || (($("form").length == 1) && ($("#survey_request_form").length == 1)) ){
+	$("#survey_info").after('<div id="thanks">Vielen Dank fuer Ihre Unterstuetzung!</div>');
+  	$("#survey_info").fadeOut().remove();
+  	if ($("#survey_request_form").length == 1) {
+  		$("h3:last").fadeOut().remove();
+  	} else
+  	{
+  		$("h3").fadeOut().remove();
+  	}
+  	
+  	$("ul.survey .devider_small:last").fadeOut().remove();
+  }
 }), 1500);
 
-//if ($("form").length == 0){
-	//alert("QQQQQQQQQQQQ");
-//}
 

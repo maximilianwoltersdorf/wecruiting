@@ -5,7 +5,12 @@ setTimeout((function() {
   $("ul.survey .devider_small:first").fadeOut().remove();
   $("#survey_request_form").fadeOut().remove();
   $(".saving_info").fadeOut().remove();
-
+  if ($("form").length == 0){
+	$("#survey_info").after('<div id="thanks">Vielen Dank fuer Ihre Unterstuetzung!</div>');
+  	$("#survey_info").fadeOut().remove();
+  	$("h3").fadeOut().remove();
+  	$("ul.survey .devider_small:last").fadeOut().remove();
+  }
 }), 1500);
 
 
