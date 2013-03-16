@@ -3,7 +3,7 @@
   .devider_small
   #survey_request_form
     = semantic_form_for RequestMessage.new, :remote => true, :html => { :id => "user_data" } do |f|
-      = f.inputs do
+      = f.inputs "", :id => "user_data_inputs" do
         = f.input :email,:required => false, :label => "Email (optional)"
         = f.input :name, :required => false
         = f.input :newsletter, :label => "Ich möchte über den Projektfortschritt informiert werden."
