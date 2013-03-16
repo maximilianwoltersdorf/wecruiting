@@ -1,2 +1,11 @@
-$('#request_form').html("<%= j render 'request_messages/form' %>");
-$('#survey_request_form').html("<%= j render 'request_messages/form_survey' %>");
+$("fieldset.inputs").after('<div class="saving_info">Ihre Antwort wird gespeichert ...</div>');
+
+setTimeout((function() {
+  $("ul.survey h3:first-child").fadeOut().remove();
+  $("ul.survey .devider_small:first").fadeOut().remove();
+  $("#survey_request_form").fadeOut().remove();
+  $(".saving_info").fadeOut().remove();
+
+}), 1500);
+
+
