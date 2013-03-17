@@ -1,9 +1,8 @@
 @import "compass";
 
-body {
-	width: 103%;
-	margin:auto;
-	margin-top: -3px;
+html, body {
+	width: 100%;
+  height:100%;
 }
 
 .container {
@@ -553,4 +552,29 @@ input[type="submit"][disabled]:active,
 input[type="submit"][disabled] {
   @include background-image(linear-gradient(#83b43a, #8bc534));
   border: 1px solid #6d992a;
+}
+
+
+//------------------------------
+//          LOGIN
+//------------------------------
+
+#login_bg {
+  background: url('/assets/header_bg.png');
+  height: 100%;  
+}
+
+#login_wrapper {
+  position:absolute;
+  left:50%;
+  top:50%;
+  width:350px;
+  margin-left:-175px;
+  margin-top:-250px;
+  padding:20px;
+}
+
+#login_wrapper_inner {
+  background: #FFF;
+  padding:10px;
 }
