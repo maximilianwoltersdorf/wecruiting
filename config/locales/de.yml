@@ -7,7 +7,7 @@ de:
   layouts:
     public:
       for_customer: "Kunden"
-      for_wecruiter: "wecruiter"
+      for_wecruiter: "recruiter"
       imprint: "Impressum"
       contact: "Kontakt"
       about: "About"
@@ -17,7 +17,7 @@ de:
       pitch_1: "Zugriff auf ein großes Netzwerk an Headhuntern"
       pitch_2: "Direkte Schnittstelle zu Xing, LinkedIn und Absolventa"
       pitch_3: "Schnell und unkompliziert passende Bewerber kennenlernen"
-      
+      slogan: "Spezialisten suchen Spezialisten!"
     pitch:
       search_optimization: "Suchoptimierung"
       search_optimization_pitch: "Überlassen Sie die komplette Suche nach neuen Mitarbeitern der Crowd! Einfach Anforderungen 

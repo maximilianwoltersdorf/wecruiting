@@ -2,7 +2,7 @@ en:
   layouts:
     public:
       for_customer: "customers"
-      for_wecruiter: "wecruiters"
+      for_wecruiter: "recruiter"
       imprint: "Imprint"
       contact: "Contact"
       about: "About"
